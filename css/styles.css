@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,700;1,400&display=swap');
+body {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow-y: hidden;
+  background: linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 4rem;
+  color: #fff;
+  text-align: center;
+}
+#btn,
+.btn-sm {
+  cursor: pointer;
+  font-family: 'Ubuntu', sans-serif;
+  margin: auto;
+  width: 250px;
+  border: none;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: rgb(39, 39, 39);
+  color: #fff;
+  border-radius: 10px;
+  transition: background 0.1s ease-in-out;
+}
+
+#btn:hover,
+.btn-sm:hover {
+  background: #fff;
+  color: #000;
+}
+
+#btn,
+#btn:active,
+#btn:focus {
+  outline: none;
+}
+.btn-sm,
+.btn-sm:active,
+.btn-sm:focus {
+  outline: none;
+}
+
+.btn-sm {
+  margin-top: 2rem;
+  background: transparent;
+  border: 1px solid #ffffff;
+  width: 250px;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  display: none;
+}
+button.show {
+  display: block;
+}
